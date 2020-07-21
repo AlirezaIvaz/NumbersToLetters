@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">تبدیل عدد به حروف</string>
+    <string name="number_input_hint">عدد</string>
+</resources>
