@@ -126,22 +126,14 @@ public class PersianNumbersToLettersConverter {
      * @return
      */
     public String threeNumbersToLetter(String num) {
-        if ("".equals(num)) {
-            return "";
-        }
+        if ("".equals(num)) return "";
         int parsedInt = Integer.parseInt(num);
-        if (parsedInt < 10) {
-            return words.get(0).get(parsedInt);
-        }
-        if (parsedInt < 20) {
-            return words.get(1).get(parsedInt - 10);
-        }
+        if (parsedInt < 10) return words.get(0).get(parsedInt);
+        if (parsedInt < 20) return words.get(1).get(parsedInt - 10);
         if (parsedInt < 100) {
             int one = parsedInt % 10;
             int ten = (parsedInt - one) / 10;
-            if (one > 0) {
-                return words.get(2).get(ten) + splitter + words.get(0).get(one);
-            }
+            if (one > 0) return words.get(2).get(ten) + splitter + words.get(0).get(one);
             return words.get(2).get(ten);
         }
         int one = parsedInt % 10;
@@ -157,9 +149,7 @@ public class PersianNumbersToLettersConverter {
                 out.add(words.get(1).get(secondPart - 10));
             } else {
                 out.add(words.get(2).get(ten));
-                if (one > 0) {
-                    out.add(words.get(0).get(one));
-                }
+                if (one > 0) out.add(words.get(0).get(one));
             }
         }
         return TextUtils.join(splitter, out);
@@ -174,12 +164,8 @@ public class PersianNumbersToLettersConverter {
     public String getParsedString(String input) {
         try {
             String zero = "صفر";
-            if ("0".equals(input)) {
-                return zero;
-            }
-            if (input.length() > 66) {
-                return "";
-            }
+            if ("0".equals(input)) return zero;
+            if (input.length() > 66) return "";
             //using big decimal in order to convert persian numbers .
             //replace all part is used to remove all the non numeric characters
             String processedInput = (new BigDecimal(input.replaceAll("[^\\d.]", ""))).toString();
@@ -190,9 +176,7 @@ public class PersianNumbersToLettersConverter {
             for (int i = 0; i < splitLength; ++i) {
                 String sectionTitle = words.get(4).get((splitLength - (i + 1)));
                 String converted = threeNumbersToLetter(splittedNumber.get(i));
-                if (!"".equals(converted)) {
-                    result.add(converted + sectionTitle);
-                }
+                if (!"".equals(converted)) result.add(converted + sectionTitle);
             }
             return TextUtils.join(splitter, result);
         } catch (Exception e) {
