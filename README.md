@@ -14,7 +14,7 @@ allprojects {
 2. Add the gradle dependency
 ```gradle
 dependencies {
-  implementation 'ir.alirezaivaz:NumbersToLetters:1.0'
+  implementation 'ir.alirezaivaz:NumbersToLetters:1.1'
 }
 ```
 
