@@ -1,0 +1,5 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NumbersToLetters" parent="Theme.Material3.DayNight.NoActionBar" />
+    <style name="Theme.NumbersToLetters" parent="Base.Theme.NumbersToLetters" />
+</resources>
