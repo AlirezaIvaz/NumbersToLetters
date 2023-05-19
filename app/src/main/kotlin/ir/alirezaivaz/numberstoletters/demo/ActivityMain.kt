@@ -1,4 +1,4 @@
-package ir.alirezaivaz.numberstoletters
+package ir.alirezaivaz.numberstoletters.demo
 
 import android.net.Uri
 import android.os.Bundle
@@ -12,7 +12,8 @@ import androidx.browser.customtabs.CustomTabColorSchemeParams
 import androidx.browser.customtabs.CustomTabsIntent
 import androidx.core.content.ContextCompat
 import androidx.core.os.LocaleListCompat
-import ir.alirezaivaz.numberstoletters.databinding.ActivityMainBinding
+import ir.alirezaivaz.numberstoletters.PersianNumbersToLettersConverter
+import ir.alirezaivaz.numberstoletters.demo.databinding.ActivityMainBinding
 
 class ActivityMain : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

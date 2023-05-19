@@ -4,10 +4,10 @@ plugins {
 }
 
 android {
-    namespace = "ir.alirezaivaz.numberstoletters"
+    namespace = "ir.alirezaivaz.numberstoletters.demo"
     compileSdk = 33
     defaultConfig {
-        applicationId = "ir.alirezaivaz.numberstoletters"
+        applicationId = "ir.alirezaivaz.numberstoletters.demo"
         minSdk = 21
         targetSdk = 33
         versionCode = 2
