@@ -8,13 +8,15 @@
 
 This simple library converts numbers to Persian letters.
 
-You can download demo application from [here](https://github.com/AlirezaIvaz/NumbersToLetters/raw/master/app/release/app-release.apk).
+You can download demo application
+from[here](https://github.com/AlirezaIvaz/NumbersToLetters/raw/master/app/release/app-release.apk).
 
 ## Adding to your project
 
 ### 1. Adding the library repository
 
-If you're using the old project structure, add **JitPack** in your root `build.gradle` or `build.gradle.kts` file like this:
+If you're using the old project structure, add **JitPack** in your root `build.gradle`
+or `build.gradle.kts` file like this:
 
 <details>
 <summary><code>build.gradle</code></summary>
@@ -46,7 +48,8 @@ allprojects {
 
 </details>
 
-Otherwise if you're using new project structure, add **JitPack** in your `settings.gradle` or `settings.gradle.kts` like this:
+Otherwise if you're using new project structure, add **JitPack** in your `settings.gradle`
+or `settings.gradle.kts` like this:
 
 <details>
 <summary><code>settings.gradle</code></summary>
@@ -82,7 +85,8 @@ dependencyResolutionManagement {
 
 ### 2. Adding the library dependency
 
-Now add the library dependency in your application module `build.gradle` or `build.gradle.kts` file like this:
+Now add the library dependency in your application module `build.gradle` or `build.gradle.kts` file
+like this:
 
 <details>
 <summary><code>build.gradle</code></summary>
@@ -111,6 +115,7 @@ dependencies {
 </details>
 
 ## Usage
+
 Simply create an object from `PersianNumbersToLettersConverter` class and call
 `getParsedString()` function and pass your number as string to that function.
 
@@ -142,16 +147,20 @@ val result = converter.getParsedString("$number")
 > This library supports 63 numbers. If you try to enter more than, the library returns error!
 
 ## Author
+
 Library by **[Alireza Ivaz](https://github.com/AlirezaIvaz)**
 
 ## Thanks
+
 * **[Mehran Shomali](http://mshomali.ir)** for base *PHP* code
 * **[Saeid Raei](https://saeid.me)** for convert *PHP* code to *Java*
 
 ## Changelog
+
 You can see full changelog from [here](CHANGELOG.md).
 
 ## License
+
 Copyright 2016-2020 Saeid Raei
 Copyright 2017-2020 Alireza Ivaz
 

@@ -4,13 +4,16 @@
         <item name="fontFamily">@font/vazirmatn</item>
         <item name="android:fontFamily">@font/vazirmatn</item>
     </style>
+
     <style name="Base.Theme.NumbersToLetter.SplashScreen" parent="Theme.SplashScreen">
         <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
         <item name="windowSplashScreenAnimationDuration">300</item>
         <item name="postSplashScreenTheme">@style/Theme.NumbersToLetters</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m">?android:isLightTheme</item>
     </style>
+
     <style name="Theme.NumbersToLetters" parent="Base.Theme.NumbersToLetters" />
+
     <style name="TextAppearance.NumbersToLetters.ActionBar.Title" parent="TextAppearance.Material3.ActionBar.Title">
         <item name="fontFamily">@font/vazirmatn</item>
         <item name="android:fontFamily">@font/vazirmatn</item>

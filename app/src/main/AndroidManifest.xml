@@ -26,6 +26,7 @@
             android:name=".ActivityMain"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+
         <service
             android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
             android:enabled="false"

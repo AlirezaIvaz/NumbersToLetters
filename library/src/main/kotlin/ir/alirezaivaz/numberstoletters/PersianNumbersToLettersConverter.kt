@@ -101,9 +101,11 @@ class PersianNumbersToLettersConverter {
             1 -> {
                 "00$number"
             }
+
             2 -> {
                 "0$number"
             }
+
             else -> {
                 number
             }
@@ -155,9 +157,11 @@ class PersianNumbersToLettersConverter {
                 secondPart < 10 -> {
                     out.add(words[0][secondPart])
                 }
+
                 secondPart < 20 -> {
                     out.add(words[1][secondPart - 10])
                 }
+
                 else -> {
                     out.add(words[2][ten])
                     if (one > 0) {
