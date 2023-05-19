@@ -1,6 +1,6 @@
 plugins {
-    id("com.android.application")
-    kotlin("android")
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.kotlin)
 }
 
 android {
@@ -37,12 +37,11 @@ android {
     }
 }
 dependencies {
-    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-    implementation("androidx.core:core-ktx:1.10.1")
-    implementation("androidx.core:core-splashscreen:1.0.1")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("androidx.browser:browser:1.5.0")
-    implementation("com.google.android.material:material:1.9.0")
-    implementation("ir.alirezaivaz:tablericons:0.9.0")
     implementation(project(":library"))
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.core.splashscreen)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.browser)
+    implementation(libs.material)
+    implementation(libs.tablericons)
 }
