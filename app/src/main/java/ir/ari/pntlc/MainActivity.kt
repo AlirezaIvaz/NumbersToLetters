@@ -15,13 +15,20 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
         binding.root.setOnClickListener(null)
+        val numbersToLettersConverter = PersianNumbersToLettersConverter()
         binding.numberInput.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {}
             override fun onTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {
-                val nlc = PersianNumbersToLettersConverter()
-                val result = nlc.getParsedString(binding.numberInput.text.toString())
-                binding.numberOutput.text = result
+                val number = binding.numberInput.text.toString()
+                if (number.isNotEmpty()) {
+                    val result =
+                        numbersToLettersConverter.getParsedString(binding.numberInput.text.toString())
+                    binding.numberOutput.text = result
+                } else {
+                    binding.numberOutput.text = ""
+                }
             }
+
             override fun afterTextChanged(editable: Editable) {}
         })
     }
