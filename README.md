@@ -94,7 +94,7 @@ like this:
 ```groovy
 dependencies {
     ...
-    def numbersToLetters = "2.0.0" // You can find the latest version from releases page
+    def numbersToLetters = "2.0.1" // You can find the latest version from releases page
     implementation "ir.alirezaivaz:numberstoletters:$numbersToLetters"
 }
 ```
@@ -107,7 +107,7 @@ dependencies {
 ```kotlin
 dependencies {
     ...
-    val numbersToLetters = "2.0.0" // You can find the latest version from releases page
+    val numbersToLetters = "2.0.1" // You can find the latest version from releases page
     implementation("ir.alirezaivaz:numberstoletters:$numbersToLetters")
 }
 ```
