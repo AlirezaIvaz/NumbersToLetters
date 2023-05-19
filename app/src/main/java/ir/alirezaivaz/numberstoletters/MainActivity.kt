@@ -1,4 +1,4 @@
-package ir.ari.pntlc
+package ir.alirezaivaz.numberstoletters
 
 import android.os.Bundle
 import android.text.Editable
@@ -6,8 +6,7 @@ import android.text.TextWatcher
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.os.LocaleListCompat
-import ir.ari.nlc.PersianNumbersToLettersConverter
-import ir.ari.pntlc.databinding.ActivityMainBinding
+import ir.alirezaivaz.numberstoletters.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

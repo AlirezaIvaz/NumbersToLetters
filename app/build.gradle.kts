@@ -4,10 +4,10 @@ plugins {
 }
 
 android {
-    namespace = "ir.ari.pntlc"
+    namespace = "ir.alirezaivaz.numberstoletters"
     compileSdk = 33
     defaultConfig {
-        applicationId = "ir.ari.pntlc"
+        applicationId = "ir.alirezaivaz.numberstoletters"
         minSdk = 21
         targetSdk = 33
         versionCode = 1

@@ -3,7 +3,7 @@ plugins {
     kotlin("android")
 }
 android {
-    namespace = "ir.ari.nlc"
+    namespace = "ir.alirezaivaz.numberstoletters"
     compileSdk = 33
     defaultConfig {
         minSdk = 14
