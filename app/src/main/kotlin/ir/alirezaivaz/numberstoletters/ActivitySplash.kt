@@ -15,7 +15,7 @@ class ActivitySplash: AppCompatActivity() {
             startActivity(
                 Intent(
                     this@ActivitySplash,
-                    MainActivity::class.java
+                    ActivityMain::class.java
                 )
             )
             finish()
