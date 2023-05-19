@@ -1,47 +1,155 @@
-# Persian Numbers to Letters Converter &nbsp;&nbsp;[![](https://jitpack.io/v/ir.alirezaivaz/NumbersToLetters.svg)](https://jitpack.io/#ir.alirezaivaz/NumbersToLetters)
-With this simple library can convert numbers to Persian letters.
-## How to use
-1. Add [JitPack](https://jitpack.io/) to your build file
-```gradle
+# Persian Numbers to Letter Converter
+
+[![](https://jitpack.io/v/ir.alirezaivaz/numberstoletters.svg)](https://jitpack.io/#ir.alirezaivaz/numberstoletters)
+[![Apache2](http://img.shields.io/badge/license-APACHE2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
+[![API 21](https://img.shields.io/badge/Min%20API-14-brightgreen)](https://developer.android.com/about/versions/lollipop)
+[![Kotlin 1.8.0](https://img.shields.io/badge/Kotlin-1.8.0-blueviolet)](https://kotlinlang.org)
+[![Issues](https://img.shields.io/github/issues/AlirezaIvaz/NumbersToLetters)](https://github.com/AlirezaIvaz/NumberToLetters/issues)
+
+This simple library converts numbers to Persian letters.
+
+You can download demo application from [here](https://github.com/AlirezaIvaz/NumbersToLetters/raw/master/app/release/app-release.apk).
+
+## Adding to your project
+
+### 1. Adding the library repository
+
+If you're using the old project structure, add **JitPack** in your root `build.gradle` or `build.gradle.kts` file like this:
+
+<details>
+<summary><code>build.gradle</code></summary>
+
+```groovy
 allprojects {
-  repositories {
-    ...
-    maven { url 'https://jitpack.io' }
-  }
+    repositories {
+        ...
+        maven {
+            url 'https://jitpack.io'
+        }
+    }
 }
 ```
 
-2. Add the gradle dependency
-```gradle
-dependencies {
-  implementation 'ir.alirezaivaz:NumbersToLetters:1.1'
-}
-```
+</details>
 
-3. Convert numbers
+<details open>
+<summary><code>build.gradle.kts</code></summary>
 
-**Java:**
-```java
-PersianNumbersToLettersConverter pntlc = new PersianNumbersToLettersConverter();
-String resultString = pntlc.getParsedString("123456789");
-```
-**Kotlin:**
 ```kotlin
-val pntlc = PersianNumbersToLettersConverter()  
-val resultString = pntlc.getParsedString("123456789")
+allprojects {
+    repositories {
+        ...
+        maven("https://jitpack.io")
+    }
+}
 ```
-5. Enjoy it!
+
+</details>
+
+Otherwise if you're using new project structure, add **JitPack** in your `settings.gradle` or `settings.gradle.kts` like this:
+
+<details>
+<summary><code>settings.gradle</code></summary>
+
+```groovy
+dependencyResolutionManagement {
+    ...
+    repositories {
+        ...
+        maven {
+            url 'https://jitpack.io'
+        }
+    }
+}
+```
+
+</details>
+
+<details open>
+<summary><code>settings.gradle.kts</code></summary>
+
+```kotlin
+dependencyResolutionManagement {
+    ...
+    repositories {
+        ...
+        maven("https://jitpack.io")
+    }
+}
+```
+
+</details>
+
+### 2. Adding the library dependency
+
+Now add the library dependency in your application module `build.gradle` or `build.gradle.kts` file like this:
+
+<details>
+<summary><code>build.gradle</code></summary>
+
+```groovy
+dependencies {
+    ...
+    def numbersToLetters = "2.0.0" // You can find the latest version from releases page
+    implementation "ir.alirezaivaz:numberstoletters:$numbersToLetters"
+}
+```
+
+</details>
+
+<details open>
+<summary><code>build.gradle.kts</code></summary>
+
+```kotlin
+dependencies {
+    ...
+    val numbersToLetters = "2.0.0" // You can find the latest version from releases page
+    implementation("ir.alirezaivaz:numberstoletters:$numbersToLetters")
+}
+```
+
+</details>
+
+## Usage
+Simply create an object from `PersianNumbersToLettersConverter` class and call
+`getParsedString()` function and pass your number as string to that function.
+
+<details>
+<summary><b>Java</b></summary>
+
+```java
+PersianNumbersToLettersConverter converter = new PersianNumbersToLettersConverter();
+Int number = 123456789;
+String inputNumber = Integer.toString(number);
+String result = converter.getParsedString(inputNumber);
+```
+
+</details>
+
+<details open>
+<summary><b>Kotlin</b></summary>
+
+```kotlin
+val converter = PersianNumbersToLettersConverter()
+val number = 123456789
+val result = converter.getParsedString("$number")
+```
+
+</details>
 
 ## Notes
 
-> This library supports 63 numbers. If you try to enter more than, the library returns empty!
+> This library supports 63 numbers. If you try to enter more than, the library returns error!
 
 ## Author
-Library by **[Alireza Ivaz](https://alirezaivaz.ir)**
+Library by **[Alireza Ivaz](https://github.com/AlirezaIvaz)**
 
-## Thanks from
+## Thanks
 * **[Mehran Shomali](http://mshomali.ir)** for base *PHP* code
 * **[Saeid Raei](https://saeid.me)** for convert *PHP* code to *Java*
+
+## Changelog
+You can see full changelog from [here](CHANGELOG.md).
 
 ## License
 Copyright 2016-2020 Saeid Raei
