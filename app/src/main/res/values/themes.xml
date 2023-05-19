@@ -1,5 +1,12 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Base.Theme.NumbersToLetters" parent="Theme.Material3.DayNight.NoActionBar" />
+    <style name="Base.Theme.NumbersToLetters" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="fontFamily">@font/vazirmatn</item>
+        <item name="android:fontFamily">@font/vazirmatn</item>
+    </style>
     <style name="Theme.NumbersToLetters" parent="Base.Theme.NumbersToLetters" />
+    <style name="TextAppearance.NumbersToLetters.ActionBar.Title" parent="TextAppearance.Material3.ActionBar.Title">
+        <item name="fontFamily">@font/vazirmatn</item>
+        <item name="android:fontFamily">@font/vazirmatn</item>
+    </style>
 </resources>
