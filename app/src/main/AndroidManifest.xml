@@ -14,13 +14,17 @@
         android:theme="@style/Theme.NumbersToLetters"
         tools:targetApi="tiramisu">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".ActivitySplash"
+            android:exported="true"
+            android:theme="@style/Base.Theme.NumbersToLetter.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
         <service
             android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
             android:enabled="false"
