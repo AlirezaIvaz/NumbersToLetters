@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.android.kotlin)
+    id("maven-publish")
 }
 android {
     namespace = "ir.alirezaivaz.numberstoletters"
@@ -24,5 +25,23 @@ android {
     }
     kotlinOptions {
         jvmTarget = "11"
+    }
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
+}
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "ir.alirezaivaz"
+            artifactId = "numberstoletters"
+            version = "2.0.0"
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
     }
 }
