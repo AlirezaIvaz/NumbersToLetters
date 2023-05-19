@@ -22,7 +22,6 @@ class ActivityMain : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
-        binding.root.setOnClickListener(null)
         val numbersToLettersConverter = PersianNumbersToLettersConverter()
         binding.numberInput.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {}
