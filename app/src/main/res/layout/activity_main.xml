@@ -54,9 +54,9 @@
                     android:id="@+id/numberInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:importantForAutofill="no"
                     android:gravity="center_horizontal"
                     android:hint="@string/number_input_hint"
+                    android:importantForAutofill="no"
                     android:inputType="number"
                     android:maxLength="63"
                     android:textAlignment="center" />
