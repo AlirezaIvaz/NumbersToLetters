@@ -1,10 +1,16 @@
 package ir.alirezaivaz.numberstoletters
 
+import android.net.Uri
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.text.Editable
 import android.text.TextWatcher
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.browser.customtabs.CustomTabColorSchemeParams
+import androidx.browser.customtabs.CustomTabsIntent
+import androidx.core.content.ContextCompat
 import androidx.core.os.LocaleListCompat
 import ir.alirezaivaz.numberstoletters.databinding.ActivityMainBinding
 
@@ -33,5 +39,21 @@ class ActivityMain : AppCompatActivity() {
 
             override fun afterTextChanged(editable: Editable) {}
         })
+        Handler(Looper.getMainLooper()).postDelayed({
+            binding.fab.shrink()
+        }, 2000)
+        binding.fab.setOnClickListener {
+            val params = CustomTabColorSchemeParams.Builder()
+                .setToolbarColor(ContextCompat.getColor(this@ActivityMain, R.color.github))
+                .build()
+            CustomTabsIntent.Builder()
+                .setDefaultColorSchemeParams(params)
+                .setShowTitle(true)
+                .build()
+                .launchUrl(
+                    this@ActivityMain,
+                    Uri.parse("https://github.com/AlirezaIvaz/NumbersToLetters")
+                )
+        }
     }
 }
