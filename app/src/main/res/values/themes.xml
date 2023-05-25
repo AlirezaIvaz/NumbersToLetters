@@ -1,8 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.NumbersToLetters" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.NumbersToLetters" parent="Theme.Material3.DynamicColors.DayNight">
         <item name="fontFamily">@font/vazirmatn</item>
         <item name="android:fontFamily">@font/vazirmatn</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
     <style name="Base.Theme.NumbersToLetter.SplashScreen" parent="Theme.SplashScreen">
