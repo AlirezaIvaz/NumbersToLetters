@@ -2,7 +2,7 @@
 
 [![](https://jitpack.io/v/ir.alirezaivaz/numberstoletters.svg)](https://jitpack.io/#ir.alirezaivaz/numberstoletters)
 [![Apache2](http://img.shields.io/badge/license-APACHE2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
-[![API 21](https://img.shields.io/badge/Min%20API-14-brightgreen)](https://developer.android.com/about/versions/lollipop)
+[![API 14](https://img.shields.io/badge/Min%20API-14-brightgreen)](https://developer.android.com/about/versions/lollipop)
 [![Kotlin 1.8.0](https://img.shields.io/badge/Kotlin-1.8.0-blueviolet)](https://kotlinlang.org)
 [![Issues](https://img.shields.io/github/issues/AlirezaIvaz/NumbersToLetters)](https://github.com/AlirezaIvaz/NumberToLetters/issues)
 
