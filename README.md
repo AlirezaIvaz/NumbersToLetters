@@ -126,7 +126,7 @@ dependencies {
 ```kotlin
 dependencies {
     ...
-    implementation(libs.tablericons)
+    implementation(libs.numberstoletters)
 }
 ```
 
