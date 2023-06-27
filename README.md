@@ -89,8 +89,52 @@ dependencyResolutionManagement {
 
 ### 2. Adding the library dependency
 
-Now add the library dependency in your application module `build.gradle` or `build.gradle.kts` file
-like this:
+#### Gradle Version Catalog
+
+First add dependency in your project version catalog like this:
+
+<details open>
+<summary><code>libs.versions.toml</code></summary>
+
+```toml
+[version]
+numberstoletters = "2.0.1" # You can find the latest version from releases page
+
+[libraries]
+numberstoletters = { group = "ir.alirezaivaz", name = "numberstoletters", version.ref = "numberstoletters" }
+```
+
+</details>
+
+Then add the library dependency in your application module `build.gradle` or `build.gradle.kts` file like this:
+
+<details>
+<summary><code>build.gradle</code></summary>
+
+```groovy
+dependencies {
+    ...
+    implementation libs.numberstoletters
+}
+```
+
+</details>
+
+<details open>
+<summary><code>build.gradle.kts</code></summary>
+
+```kotlin
+dependencies {
+    ...
+    implementation(libs.tablericons)
+}
+```
+
+</details>
+
+#### Legacy
+
+Just add the library dependency in your application module `build.gradle` or `build.gradle.kts` file like this:
 
 <details>
 <summary><code>build.gradle</code></summary>
