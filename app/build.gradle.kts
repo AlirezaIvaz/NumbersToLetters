@@ -10,8 +10,8 @@ android {
         applicationId = "ir.alirezaivaz.numberstoletters.demo"
         minSdk = 21
         targetSdk = 33
-        versionCode = 210
-        versionName = "2.1.0"
+        versionCode = 202
+        versionName = "2.0.2"
         resourceConfigurations += "fa"
     }
     buildTypes {
