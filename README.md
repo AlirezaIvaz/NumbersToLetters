@@ -8,8 +8,12 @@
 
 This simple library converts numbers to Persian letters.
 
-You can download demo application
-from [here](https://github.com/AlirezaIvaz/NumbersToLetters/raw/master/app/release/app-release.apk).
+## Demo
+
+You can download the demo application
+from [releases page](https://github.com/AlirezaIvaz/NumbersToLetters/releases) or markets:
+
+[<img src="https://alirezaivaz.ir/assets/img/get-myket-en.png" alt="Get it on Myket">](https://myket.ir/app/ir.alirezaivaz.numberstoletters.demo)
 
 ## Adding to your project
 
