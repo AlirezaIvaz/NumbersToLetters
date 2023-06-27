@@ -18,6 +18,7 @@ class ActivitySplash : AppCompatActivity() {
                     ActivityMain::class.java
                 )
             )
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
             finish()
         }
     }
