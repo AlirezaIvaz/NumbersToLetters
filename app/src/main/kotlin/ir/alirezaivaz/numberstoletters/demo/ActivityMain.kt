@@ -16,6 +16,7 @@ import ir.alirezaivaz.numberstoletters.PersianNumbersToLettersConverter
 import ir.alirezaivaz.numberstoletters.demo.databinding.ActivityMainBinding
 
 class ActivityMain : AppCompatActivity() {
+    private val activityMain = this@ActivityMain
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags("fa-IR"))
@@ -44,14 +45,14 @@ class ActivityMain : AppCompatActivity() {
         }, 2000)
         binding.fab.setOnClickListener {
             val params = CustomTabColorSchemeParams.Builder()
-                .setToolbarColor(ContextCompat.getColor(this@ActivityMain, R.color.github))
+                .setToolbarColor(ContextCompat.getColor(activityMain, R.color.github))
                 .build()
             CustomTabsIntent.Builder()
                 .setDefaultColorSchemeParams(params)
                 .setShowTitle(true)
                 .build()
                 .launchUrl(
-                    this@ActivityMain,
+                    activityMain,
                     Uri.parse("https://github.com/AlirezaIvaz/NumbersToLetters")
                 )
         }
