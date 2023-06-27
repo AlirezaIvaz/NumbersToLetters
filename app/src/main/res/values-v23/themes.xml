@@ -1,4 +1,5 @@
 <resources>
+
     <style name="Theme.NumbersToLetters" parent="Base.Theme.NumbersToLetters">
         <!-- Transparent system bars for edge-to-edge -->
         <item name="android:navigationBarColor">@android:color/transparent</item>
