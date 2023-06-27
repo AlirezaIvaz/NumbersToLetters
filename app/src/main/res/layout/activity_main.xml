@@ -59,7 +59,8 @@
                     android:importantForAutofill="no"
                     android:inputType="number"
                     android:maxLength="63"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:textDirection="ltr" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
