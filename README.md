@@ -13,6 +13,7 @@ This simple library converts numbers to Persian letters.
 You can download the demo application
 from [releases page](https://github.com/AlirezaIvaz/NumbersToLetters/releases) or markets:
 
+[<img src="https://alirezaivaz.ir/assets/img/get-cafebazaar-en.png" alt="Get it on Bazaar">](https://cafebazaar.ir/app/ir.alirezaivaz.numberstoletters.demo?l=en)
 [<img src="https://alirezaivaz.ir/assets/img/get-myket-en.png" alt="Get it on Myket">](https://myket.ir/app/ir.alirezaivaz.numberstoletters.demo)
 
 ## Adding to your project
